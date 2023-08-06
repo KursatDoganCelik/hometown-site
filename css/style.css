@@ -3,3 +3,9 @@
   margin: 0%;
   box-sizing: border-box;
 }
+.slider-text-title{
+  font-size: 50px;
+  font-weight: 700;
+  color: rgb(76, 91, 176);
+  text-shadow: 0px 0px 20px #201515bc;
+}
