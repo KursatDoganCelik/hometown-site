@@ -13,7 +13,7 @@
 
 <body>
   <!-- Navbar Start-->
-  <nav class="navbar navbar-expand-md	mb-4 bg-danger navbar-white ">
+  <nav class="navbar navbar-expand-md bg-danger navbar-white ">
     <div class="container">
       <a href="index.html" class="navbar-brand text-white">Anasayfa</a>
       <div id="navbarCollapse" class="collapse navbar-collapse">
@@ -43,11 +43,89 @@
               İletişim
             </a>
           </li>
+          <li class="nav-item">
+            <a href="ilgiAlanı.html" class="nav-link active text-white">
+              İlgi Alanı
+            </a>
+          </li>
         </ul>
       </div>
     </div>
   </nav>
   <!-- Navbar End-->
+
+  <!-- Header Start-->
+  <header>
+    <div class="bg-info text-light pt-1 pb-1">
+      <div class="container">
+        <div class="col-md-12">
+          <h1 class="display-4 font-italic text-center">
+            Başarılı
+          </h1>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Header End-->
+
+  <!-- Main Start -->
+  <main>
+    <div class="container mt-5">
+      <div class="row">
+        <!-- Javascript Start -->
+        <script type="text/javascript">
+          function getParameterByName(name, url) {
+            if (!url) url = window.location.href;
+            name = name.replace(/[\[\]]/g, '\\$&');
+            var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+              results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, ' '));
+          }
+          var name = getParameterByName('name');
+          var email = getParameterByName('email');
+          var message = getParameterByName('message');
+        </script>
+        <!-- Javascript End -->
+        <div class="col-md-3 px-0"></div>
+        <div class="col-md-6 px-0">
+          <table class="table text-center">
+            <tbody>
+              <tr>
+                <td>İsim</td>
+                <td>:</td>
+                <td>
+                  <script>document.write(name);
+                  </script>
+                </td>
+              </tr>
+              <tr>
+                <td>E-Mail</td>
+                <td>:</td>
+                <td>
+                  <script>document.write(email);
+                  </script>
+                </td>
+              </tr>
+              <tr>
+                <td>Mesaj</td>
+                <td>:</td>
+                <td>
+                  <script>document.write(message);
+                  </script>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-md-3 px-0"></div>
+
+
+      </div>
+    </div>
+  </main>
+  <!-- Main End -->
 
   <!-- Footer -->
   <footer class="fixed-bottom py-2 bg-dark text-white text-center">
