@@ -10,20 +10,18 @@
 <body>
   <table>
     <tr>
-      <td>ADI SOYADI</td>
-      <td>:</td>
       <td>
         <b>
           <?php
-          if (isset($_POST['name']) && isset($_POST['surname'])) {
-            $DEFAULT_USERNAME = "asd";
-            $DEFAULT_PASSWORD = "asd";
-            $username = $_POST["name"];
-            $password = $_POST["surname"];
-            if ($username != "" && $password != "") {
-              if ($username == $DEFAULT_USERNAME && $password == $DEFAULT_PASSWORD) {
-                echo "Hoşgeldiniz <br><hr>";
-                echo "$username";
+          if (isset($_POST['email']) && isset($_POST['password'])) {
+            $DEFAULT_EMAIL = "s221210261@ogr.com";
+            $DEFAULT_PASSWORD = "qweasd";
+            $email = $_POST["email"];
+            $password = $_POST["password"];
+            if ($email != "" && $password != "") {
+              if ($email == $DEFAULT_EMAIL && $password == $DEFAULT_PASSWORD) {
+                echo "Hoşgeldiniz: $email";
+                echo "<p> <a href='login.php'>&lt;GERİ DÖN&gt;</a></p> ";
               } else {
                 header("Location:login.php");
               }
@@ -33,7 +31,6 @@
           } else {
             header("Location:login.php");
           }
-          echo "<p> <a href='login.php'>&lt;GERİ DÖN&gt;</a></p> ";
           ?>
           <b>
       </td>

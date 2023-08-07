@@ -38,7 +38,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="../#" class="nav-link active text-white">
+            <a href="../iletisim.html" class="nav-link active text-white">
               İletişim
             </a>
           </li>
@@ -58,38 +58,37 @@
           </div>
         </div>
         <div class="col-md-2"></div>
-
         <!-- Form Part Start -->
         <div class="col-md-12 d-flex justify-content-center">
           <form action="control.php" method="post">
             <table class="table mx-3">
               <tbody>
                 <tr>
-                  <td>Kullanıcı Adı</td>
-                  <td><input class="px-1" type="text" name="name"></td>
+                  <td>Eposta</td>
+                  <td><input class="px-1" type="email" name="email"></td>
                 </tr>
                 <tr>
                   <td>Parola</td>
-                  <td><input class="px-1" type="password" name="surname"></td>
+                  <td><input class="px-1" type="password" name="password"></td>
                 </tr>
               </tbody>
             </table>
             <!-- Button -->
             <div class="col-md-12 d-flex justify-content-center">
-              <button type="submit" class="btn btn-lg btn-outline-info" value="Gönder">Gönder</button>
+              <button type="submit" class="btn btn-lg btn-outline-info mb-5" value="Gönder">Gönder</button>
             </div>
           </form>
         </div>
         <!-- Form Part End -->
-
       </div>
     </div>
   </main>
   <!-- Main End -->
+</body>
 
-  <!-- Footer -->
-  <footer class="fixed-bottom py-2 bg-dark text-white text-center">
-    WebTechnologyProject © Kürşat Doğan Çelik
-  </footer>
+<!-- Footer -->
+<footer class="fixed-bottom py-2 bg-dark text-white text-center">
+  WebTechnologyProject © Kürşat Doğan Çelik
+</footer>
 
 </html>
