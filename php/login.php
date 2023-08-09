@@ -12,7 +12,7 @@
 
 <body>
   <!-- Navbar Start-->
-  <nav class="navbar navbar-expand-md bg-danger navbar-white ">
+  <nav class="navbar navbar-expand-sm bg-danger navbar-white ">
     <div class="container">
       <a href="../index.html" class="navbar-brand text-white">Anasayfa</a>
       <div id="navbarCollapse" class="collapse navbar-collapse">
